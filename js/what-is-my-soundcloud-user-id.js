@@ -27,7 +27,7 @@ if (document.URL == "http://timpietrusky.github.local/what-is-my-soundcloud-user
 if (document.URL == "http://chaseha.github.io/what-is-my-soundcloud-user-id/") {
   config = {
     client_id : '0ab8c3def9c0fb3d28a0da044a80304e',
-    redirect_uri : 'http://chaseha.github.io/what-is-my-soundcloud-user-id/'
+    redirect_uri : 'http://chaseha.github.io/what-is-my-soundcloud-user-id/callback.html'
   };
 }
 
@@ -46,7 +46,7 @@ var button_get_user_id = document.querySelectorAll('[role="get your user_id"]')[
 button_get_user_id.onclick = function() {
   SC.initialize({
     client_id: '0ab8c3def9c0fb3d28a0da044a80304e', /* config.client_id, */
-    redirect_uri: 'http://chaseha.github.io/what-is-my-soundcloud-user-id/' /* config.redirect_uri */
+    redirect_uri: 'http://chaseha.github.io/what-is-my-soundcloud-user-id/callback.html' /* config.redirect_uri */
   });
 
   if ($_GET['code'] == undefined) {
