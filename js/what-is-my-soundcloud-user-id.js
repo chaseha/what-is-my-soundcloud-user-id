@@ -45,8 +45,8 @@ var button_get_user_id = document.querySelectorAll('[role="get your user_id"]')[
 /* Connect to SoundCloud and authorize when necessary */
 button_get_user_id.onclick = function() {
   SC.initialize({
-    client_id: config.client_id,
-    redirect_uri: config.redirect_uri
+    client_id: '0ab8c3def9c0fb3d28a0da044a80304e', /* config.client_id, */
+    redirect_uri: 'http://chaseha.github.io/what-is-my-soundcloud-user-id/' /* config.redirect_uri */
   });
 
   if ($_GET['code'] == undefined) {
