@@ -15,7 +15,7 @@ var config = {
   redirect_uri : ''
 }
 
-/* local settings */
+/* local settings [not sure how to get this to work]*/
 if (document.URL == "http://timpietrusky.github.local/what-is-my-soundcloud-user-id/") {
   config = {
     client_id : 'dd93c5927f6d4c9c4deab805bc38896e',
@@ -24,10 +24,10 @@ if (document.URL == "http://timpietrusky.github.local/what-is-my-soundcloud-user
 }
 
 /* production settings */
-if (document.URL == "http://timpietrusky.github.io/what-is-my-soundcloud-user-id/") {
+if (document.URL == "http://chaseha.github.io/what-is-my-soundcloud-user-id/") {
   config = {
-    client_id : '5aec011faa8e46a01000cd23b8698858',
-    redirect_uri : 'http://timpietrusky.github.io/what-is-my-soundcloud-user-id/'
+    client_id : '0ab8c3def9c0fb3d28a0da044a80304e',
+    redirect_uri : 'http://chaseha.github.io/what-is-my-soundcloud-user-id/'
   };
 }
 
